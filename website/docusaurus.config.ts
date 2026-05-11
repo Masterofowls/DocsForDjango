@@ -2,147 +2,157 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: "Django Mastery Docs",
+  tagline: "From installation to production — the complete Django reference.",
+  favicon: "img/favicon.ico",
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: "http://localhost",
+  baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "mrdan",
+  projectName: "django-mastery-docs",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: "./sidebars.ts",
+          routeBasePath: "docs",
+          showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/django-social-card.jpg",
     colorMode: {
+      defaultMode: "dark",
       respectPrefersColorScheme: true,
     },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
-      title: 'My Site',
+      title: "Django Mastery",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Django Logo",
+        src: "img/logo.svg",
+        srcDark: "img/logo-dark.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          type: "docSidebar",
+          sidebarId: "djangoSidebar",
+          position: "left",
+          label: "Documentation",
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "/docs/installation-and-tooling",
+          label: "Quick Start",
+          position: "left",
+        },
+        {
+          type: "search",
+          position: "right",
         },
       ],
+      hideOnScroll: false,
+      style: "dark",
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Core",
           items: [
+            { label: "Installation", to: "/docs/installation-and-tooling" },
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: "Project Structure",
+              to: "/docs/project-structure-and-apps",
+            },
+            { label: "Settings", to: "/docs/settings-and-environments" },
+          ],
+        },
+        {
+          title: "Data & Auth",
+          items: [
+            { label: "Models & ORM", to: "/docs/models-and-orm-basics" },
+            {
+              label: "Users & Permissions",
+              to: "/docs/users-auth-and-permissions",
+            },
+            {
+              label: "REST Framework",
+              to: "/docs/django-rest-framework-deep-dive",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Production",
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            { label: "Deployment", to: "/docs/deployment-and-operations" },
+            { label: "Security", to: "/docs/security-hardening" },
+            { label: "Testing", to: "/docs/testing-strategy" },
           ],
         },
         {
-          title: 'More',
+          title: "Tutorials",
+          items: [
+            { label: "Build a Posts App", to: "/docs/building-posts-app" },
+            {
+              label: "Build an E-Commerce App",
+              to: "/docs/building-orders-and-ecommerce",
+            },
+            { label: "Build a Chat App", to: "/docs/building-chat-app" },
+          ],
+        },
+        {
+          title: "More",
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: "Django Docs",
+              href: "https://docs.djangoproject.com",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: "Django REST Framework",
+              href: "https://www.django-rest-framework.org",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Django Mastery Docs. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneDark,
+      darkTheme: prismThemes.oneDark,
+      additionalLanguages: ["python", "bash", "sql", "toml", "groovy", "nginx"],
     },
   } satisfies Preset.ThemeConfig,
 };
