@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: "http://localhost",
+  url: 'https://website-daniel-shterns-projects.vercel.app',
   baseUrl: "/",
 
   organizationName: "mrdan",
@@ -48,8 +48,73 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'reactDocs',
+        path: 'react-docs',
+        routeBasePath: 'react',
+        sidebarPath: './react-sidebars.ts',
+        showLastUpdateTime: false,
+        showLastUpdateAuthor: false,
+      },
+    ],
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: false,
+        swCustom: '../../../../src/pwa/sw-custom.js',
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+      },
+    ],
+  ],
+
   themeConfig: {
     image: "img/django-social-card.jpg",
+    metadata: [
+      {name: 'theme-color', content: '#0c4b33'},
+      {name: 'mobile-web-app-capable', content: 'yes'},
+      {name: 'apple-mobile-web-app-capable', content: 'yes'},
+      {name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent'},
+      {name: 'application-name', content: 'Django & React Mastery'},
+      {name: 'apple-mobile-web-app-title', content: 'Django & React Mastery'},
+      {name: 'msapplication-TileColor', content: '#0c4b33'},
+    ],
+    pwa: {
+      offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
+      pwaHead: [
+        {
+          tagName: 'link',
+          rel: 'icon',
+          href: '/img/icon-192.png',
+        },
+        {
+          tagName: 'link',
+          rel: 'manifest',
+          href: '/manifest.webmanifest',
+        },
+        {
+          tagName: 'link',
+          rel: 'apple-touch-icon',
+          href: '/img/apple-touch-icon.png',
+        },
+        {
+          tagName: 'meta',
+          name: 'theme-color',
+          content: '#0c4b33',
+        },
+        {
+          tagName: 'meta',
+          name: 'msapplication-config',
+          content: '/browserconfig.xml',
+        },
+      ],
+    },
     colorMode: {
       defaultMode: "dark",
       respectPrefersColorScheme: true,
@@ -78,6 +143,13 @@ const config: Config = {
           to: "/docs/installation-and-tooling",
           label: "Quick Start",
           position: "left",
+        },
+        {
+          type: 'docSidebar',
+          docsPluginId: 'reactDocs',
+          sidebarId: 'reactSidebar',
+          position: 'left',
+          label: 'React Advanced',
         },
         {
           type: "search",

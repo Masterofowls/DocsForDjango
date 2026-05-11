@@ -1,0 +1,75 @@
+{
+  "name": "Django and React Mastery Docs",
+  "short_name": "Mastery Docs",
+  "description": "Comprehensive Django and React advanced documentation for production engineering.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c4b33",
+  "theme_color": "#0c4b33",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "developer", "productivity"],
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Django Docs",
+      "short_name": "Django",
+      "description": "Open the full Django documentation track.",
+      "url": "/docs/installation-and-tooling",
+      "icons": [
+        {
+          "src": "/img/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "React Advanced",
+      "short_name": "React",
+      "description": "Open the React advanced documentation track.",
+      "url": "/react/react-intro",
+      "icons": [
+        {
+          "src": "/img/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Offline Fallback",
+      "short_name": "Offline",
+      "description": "Open the offline help page when the network is unavailable.",
+      "url": "/offline.html",
+      "icons": [
+        {
+          "src": "/img/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

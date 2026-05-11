@@ -1,0 +1,47 @@
+{
+  "name": "Django and React Mastery Docs",
+  "short_name": "Mastery Docs",
+  "description": "Comprehensive Django and React advanced documentation.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "theme_color": "#092E20",
+  "background_color": "#092E20",
+  "icons": [
+    {
+      "src": "/icon-django-primary.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-django-alt-1.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-django-alt-2.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Django Docs",
+      "short_name": "Django",
+      "description": "Open Django documentation.",
+      "url": "/docs/installation-and-tooling"
+    },
+    {
+      "name": "React Advanced",
+      "short_name": "React",
+      "description": "Open React advanced documentation.",
+      "url": "/react/react-intro"
+    }
+  ]
+}
