@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['update_5for_5fcreate_0',['22.3 &lt;span class=&quot;tt&quot;&gt;get_or_create()&lt;/span&gt; and &lt;span class=&quot;tt&quot;&gt;update_or_create()&lt;/span&gt;',['../md_docs_2django-complete-guide.html#autotoc_md278',1,'']]],
+  ['updates_20with_20f_1',['22.2 Field-Aware Updates with &lt;span class=&quot;tt&quot;&gt;F&lt;/span&gt;',['../md_docs_2django-complete-guide.html#autotoc_md277',1,'']]],
+  ['upload_2',['Upload',['../md_docs_225-uploading-and-media-files.html#autotoc_md147',1,'Form with File Upload'],['../md_docs_225-uploading-and-media-files.html#autotoc_md148',1,'View with File Upload']]],
+  ['uploading_20and_20media_20files_3',['Uploading and Media Files',['../md_docs_225-uploading-and-media-files.html',1,'']]],
+  ['upserts_4',['Safe Upserts',['../md_docs_206-advanced-orm-and-relations.html#autotoc_md37',1,'']]],
+  ['url_20middleware_5',['URL Middleware',['../md_docs_235-advanced-url-routing.html#autotoc_md215',1,'']]],
+  ['url_20routing_6',['URL Routing',['../md_docs_235-advanced-url-routing.html',1,'Advanced URL Routing'],['../md_docs_204-url-routing.html',1,'URL Routing']]],
+  ['url_20usage_7',['Reverse URL Usage',['../md_docs_204-url-routing.html#autotoc_md24',1,'']]],
+  ['urlconf_8',['URLConf',['../md_docs_2django-complete-guide.html#autotoc_md236',1,'5.1 Root URLConf'],['../md_docs_2django-complete-guide.html#autotoc_md237',1,'5.2 App URLConf']]],
+  ['urls_9',['URLs',['../md_docs_228-building-posts-app.html#autotoc_md170',1,'']]],
+  ['urls_20and_20routing_10',['5. URLs and Routing',['../md_docs_2django-complete-guide.html#autotoc_md235',1,'']]],
+  ['usage_11',['Usage',['../md_docs_204-url-routing.html#autotoc_md24',1,'Reverse URL Usage'],['../md_docs_232-external-auth-and-django-allauth.html#autotoc_md195',1,'Template Usage'],['../md_docs_214-management-commands.html#autotoc_md84',1,'Usage']]],
+  ['use_20cases_12',['Use Cases',['../md_docs_214-management-commands.html#autotoc_md85',1,'']]],
+  ['user_20model_13',['Custom User Model',['../md_docs_211-users-auth-and-permissions.html#autotoc_md65',1,'']]],
+  ['user_20model_20recommended_14',['10.2 Custom User Model (Recommended)',['../md_docs_2django-complete-guide.html#autotoc_md252',1,'']]],
+  ['users_20auth_20and_20permissions_15',['Users, Auth, and Permissions',['../md_docs_211-users-auth-and-permissions.html',1,'']]],
+  ['users_20authentication_20and_20permissions_16',['10. Users, Authentication, and Permissions',['../md_docs_2django-complete-guide.html#autotoc_md250',1,'']]],
+  ['users_20groups_20and_20permission_20patterns_17',['26. Users, Groups, and Permission Patterns',['../md_docs_2django-complete-guide.html#autotoc_md286',1,'']]],
+  ['using_20in_20templates_18',['Using in Templates',['../md_docs_234-styling-with-tailwind-and-css.html#autotoc_md205',1,'']]],
+  ['using_20uv_20modern_20alternative_19',['Using uv (Modern Alternative)',['../md_docs_230-virtual-environments-venv-and-uv.html#autotoc_md181',1,'']]],
+  ['using_20venv_20',['Using venv',['../md_docs_230-virtual-environments-venv-and-uv.html#autotoc_md180',1,'']]],
+  ['uv_21',['Virtual Environments: venv and uv',['../md_docs_230-virtual-environments-venv-and-uv.html',1,'']]],
+  ['uv_20modern_20alternative_22',['Using uv (Modern Alternative)',['../md_docs_230-virtual-environments-venv-and-uv.html#autotoc_md181',1,'']]]
+];
